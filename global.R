@@ -1,5 +1,7 @@
-options(java.parameters = "-Xmx8g" ) 
+options(java.parameters = "-Xmx16g" ) 
+J("java.lang.Runtime")$getRuntime()$gc()
 options(shiny.trace = TRUE)
+
 library(shiny)
 library(DT)
 library(png)
@@ -22,6 +24,7 @@ library(shinyjs)
 library(rjson)
 library(shinycssloaders)
 library(conflicted)
+
 conflict_prefer("filter", "dplyr")
 conflict_prefer("is.connected", "rcdk")
 conflict_prefer("count", "fingerprint")
