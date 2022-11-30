@@ -1,6 +1,7 @@
 FROM sagebionetworks/shiny-base:release-1.0
 USER root
 RUN apt-get install -y default-jdk
+RUN R CMD javareconf
 USER shiny
 # This is the expected application installation folder
 WORKDIR /srv/shiny-server/app
