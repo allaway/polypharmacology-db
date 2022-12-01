@@ -1,5 +1,4 @@
-options(java.parameters = "-Xmx16g" ) 
-J("java.lang.Runtime")$getRuntime()$gc()
+options(java.parameters = "-Xmx8g" ) 
 options(shiny.trace = TRUE)
 
 library(shiny)
